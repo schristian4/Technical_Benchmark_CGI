@@ -22,6 +22,9 @@ $req->content($POST_XML_LOGIN);
 
 print "Content-type: text/html\n\n";
 print "<html><head>\n";
+
+print "<script src=\"src/index.js\"></script>\n";
+
 print "</head><body>\n";
 
 $resp = $ua->request($req);            # Send request
