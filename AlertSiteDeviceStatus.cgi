@@ -22,9 +22,6 @@ $req->content($POST_XML_LOGIN);
 
 print "Content-type: text/html\n\n";
 print "<html><head>\n";
-
-print "<script src=\"src/index.js\"></script>\n";
-
 print "</head><body>\n";
 
 $resp = $ua->request($req);            # Send request
@@ -135,4 +132,9 @@ foreach my $Entry (@BigFatArray) {
     }
     print $InnerListArray[2] . "<td>" . $InnerListArray[3];
 }
-print "</table><p>\n";
+print "</table></body><p>\n";
+
+print "<script src=\"src/index.js\"></script>\n";
+
+print "</html>\n";
+
